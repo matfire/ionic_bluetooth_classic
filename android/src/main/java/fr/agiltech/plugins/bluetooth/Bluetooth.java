@@ -111,7 +111,9 @@ public class Bluetooth {
         if (Objects.equals(address, _device.getAddress())) {
             try {
                 _socket.close();
-                _thread.cancel();
+                _socket = null;
+                _thread.stop();
+                _thread = null;
                 _notifier.accept("deviceConnectionStatusChanged", new BluetoothStatusChange(_device.getAddress(), BluetoothStatus.DISCONNECTED).toObject());
                 _device = null;
 

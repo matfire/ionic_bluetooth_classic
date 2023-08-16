@@ -41,6 +41,7 @@ add the following lines to your AndroidManifest.xml file:
 * [`addListener('deviceDiscovered', ...)`](#addlistenerdevicediscovered)
 * [`getPairedDevices()`](#getpaireddevices)
 * [`connect(...)`](#connect)
+* [`disconnect()`](#disconnect)
 * [Interfaces](#interfaces)
 * [Type Aliases](#type-aliases)
 * [Enums](#enums)
@@ -177,6 +178,17 @@ connect(data: { deviceId: string; appUUID: string; }) => Promise<boolean>
 | Param      | Type                                                |
 | ---------- | --------------------------------------------------- |
 | **`data`** | <code>{ deviceId: string; appUUID: string; }</code> |
+
+**Returns:** <code>Promise&lt;boolean&gt;</code>
+
+--------------------
+
+
+### disconnect()
+
+```typescript
+disconnect() => Promise<boolean>
+```
 
 **Returns:** <code>Promise&lt;boolean&gt;</code>
 

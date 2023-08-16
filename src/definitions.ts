@@ -41,9 +41,8 @@ export interface BluetoothPlugin {
   ): Promise<PluginListenerHandle> & PluginListenerHandle;
   getPairedDevices(): Promise<{ devices: any[] }>;
   connect(data: { deviceId: string; appUUID: string }): Promise<boolean>;
-  /* 
   disconnect(): Promise<boolean>
-  isConnected(deviceId: string): Promise<boolean> */
+  //isConnected(deviceId: string): Promise<boolean>
 }
 
 export interface PermissionStatus {

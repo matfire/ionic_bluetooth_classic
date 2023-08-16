@@ -32,6 +32,10 @@ export class BluetoothWeb extends WebPlugin implements BluetoothPlugin {
   async connect(_data: {deviceId: string}): Promise<boolean> {
     throw this.unavailable('Not implemented on web.');
   }
+
+  async disconnect(): Promise<boolean> {
+    throw this.unavailable('Not implemented on web.');
+  }
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   addListener(_eventName: string, _listenerFunc: ListenerCallback): Promise<PluginListenerHandle> & PluginListenerHandle {
     throw this.unavailable('Not implemented on web.');
