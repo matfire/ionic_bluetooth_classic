@@ -9,7 +9,6 @@ export enum DeviceStatus {
 export interface IDevice {
   address: string;
   name?: string;
-  type: number;
 }
 
 export interface IDataReceived {
