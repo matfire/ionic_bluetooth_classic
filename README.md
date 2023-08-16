@@ -298,7 +298,6 @@ buffer as needed.
 | ------------- | ------------------- |
 | **`address`** | <code>string</code> |
 | **`name`**    | <code>string</code> |
-| **`type`**    | <code>number</code> |
 
 
 ### Type Aliases
