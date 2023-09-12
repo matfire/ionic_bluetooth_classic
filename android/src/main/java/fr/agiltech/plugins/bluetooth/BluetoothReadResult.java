@@ -20,8 +20,10 @@ public class BluetoothReadResult {
     }
     public JSObject toObject() {
         JSObject res = new JSObject();
-        res.put("size", size);
-        res.put("bytes", Arrays.toString(bytes));
+        JSObject data = new JSObject();
+        data.put("size", size);
+        data.put("bytes", Arrays.toString(bytes));
+        res.put("data", data);
         return res;
     }
 }
