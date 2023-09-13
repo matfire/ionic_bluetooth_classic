@@ -12,7 +12,7 @@ export interface IDevice {
 }
 
 export interface IDataReceived {
-  bytes: Uint8Array;
+  bytes: string;
   size: number;
 }
 
